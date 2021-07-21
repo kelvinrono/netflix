@@ -27,14 +27,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
-    'netflixapp',
-    'bootstrap4'
-=======
 
     'netflixapp',
->>>>>>> 45b44cdf48abc764115ffc2b20490c9d95eaf6f1
-]
+    'bootstrap4',
+    ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
