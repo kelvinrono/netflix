@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{%block content%}
+<div class="container-fluid">
+
+    {% for singles in movie%}
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{singles.original_title}}</h5>
+          <p class="card-text">{{singles.overview}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+
+
+{%endblock%}
