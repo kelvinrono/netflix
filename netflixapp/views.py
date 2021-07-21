@@ -14,7 +14,7 @@ tmdb.API_KEY = '7da36f8f0eb36fe41793378a726e9104'
 DEVELOPER_KEY = 'AIzaSyCZKLBjdBQA7RIFL9uwy8z2BpDWeA0-p-s'
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v4'
-# Create your views here.
+
 def movies(request):
     popular_movies = tmdb.Movies('popular')
     popular_movies = popular_movies.info()['results']
