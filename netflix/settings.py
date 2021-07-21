@@ -27,8 +27,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'netflixapp',
     'bootstrap4'
+=======
+
+    'netflixapp',
+>>>>>>> 45b44cdf48abc764115ffc2b20490c9d95eaf6f1
 ]
 
 MIDDLEWARE = [
@@ -67,12 +72,13 @@ WSGI_APPLICATION = 'netflix.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+
         'NAME': 'netflix',
         'USER': 'moringa',
     'PASSWORD':'35207605',
-    }
-}
 
+    }
+    }
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -97,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
@@ -110,6 +116,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# auth settings
+AUTH_USER_MODEL='netflixapp.CustomUser'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
