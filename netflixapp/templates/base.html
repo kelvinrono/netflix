@@ -14,7 +14,10 @@
 </head>
 
 <body>
-  {% include 'navbar.html' %}{% block scripts %} {%block content %}{% endblock %}
+  {% include 'navbar.html' %}
+  {% block scripts %}
+   {%block content %}
+   {% endblock %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     $(".js-carousel").each(function() {
