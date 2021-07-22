@@ -9,15 +9,14 @@
   {% else %}
   <title> Netflix-Clone </title>
   {% endif %} {% block styles %} {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/movies.css'%}">
+  <link rel="stylesheet" href="{% static 'style.css'%}">
   <link href="https://fonts.googleapis.com/css?family=Chewy|Monoton|Cabin+Sketch|Concert+One|Arima+Madurai|Cabin" rel="stylesheet"> {% endblock %}
 </head>
 
 <body>
   {% include 'navbar.html' %}
   {% block scripts %}
-   {%block content %}
-   {% endblock %}
+   {%block content %}{% endblock %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     $(".js-carousel").each(function() {
