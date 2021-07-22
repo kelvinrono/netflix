@@ -1,12 +1,16 @@
 <div class="logo"></div>
 {% load static %}
 <nav class="flex text-gray-100 justify-between items-center py-3 px-4 fixed w-full z-50">
-        <div class="w-6/12">
-            <a href='/'>
-            
+    <div class="w-6/12">
+        <a href='/'>
+
             <img src="{% static 'netflix.png' %}" alt="logo" class="w-5/12 md:w-2/12">
-            </a>
-        </div>
+        </a>
+    </div>
+    <button class="bg-primary_red py-1 px-3 text-white md:text-lg rounded-md"><a class="page-link"
+            href="{% url 'login' %}">
+            Sign In
+        </a></button>
 
 
-    </nav>
+</nav>

@@ -30,6 +30,10 @@ INSTALLED_APPS = [
 
     'netflixapp',
     'bootstrap4',
+        # third party apps
+    # 'allauth',
+    # 'allauth.account',
+    # 'allauth.socialaccount',
     ]
 
 
