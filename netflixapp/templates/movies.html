@@ -2,45 +2,42 @@
 <div class="container-fluid">
 
 
-    <h1 class="title">popular movies</h1>
+  <h1 class="title text-center">Popular Movies</h1>
 
-        <div class="row">
-          
-        {% for movie in popular %}
-        <div class="col-md-3">
-        <a href="{% url 'oneMovie' movie.id %}">
-          <div class=" card-body"><img class="tile__img" src="https://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="" /></div>
-        </a>
-        
-      </div>
-        {% endfor %}
-    
+  <div class="row">
+
+    {% for movie in popular %}
+    <div class="col-md-3">
+      <a href="{% url 'oneMovie' movie.id %}">
+        <div class=" card-body"><img class="tile__img" src="https://image.tmdb.org/t/p/w342/{{movie.poster_path}}"
+            alt="" /></div>
+      </a>
+
     </div>
+    {% endfor %}
 
-  </div>
-  </div>
-  </div>
->
-  <h1 class="title">Upcoming Movies</h1>
 
-        <div class="col-md-3">
-        <div class="card row">
+
+
+
+
+
+    <h1 class="title">Upcoming Movies</h1>
+
+    <div class="col-md-3">
+      <div class="card row">
         {% for movie in upcoming %}
-    
+
         <a href="{% url 'oneMovie' movie.id %}">
-          <div class=" card-body"><img class="tile__img" src="https://image.tmdb.org/t/p/w342/{{movie.poster_path}}" alt="" /></div>
+          <div class=" card-body"><img class="tile__img" src="https://image.tmdb.org/t/p/w342/{{movie.poster_path}}"
+              alt="" /></div>
         </a>
-        </div>
-        
-        </div>
-        </div>
-        {% endfor %}
-</div>
-        </div>
-     
+      </div>
+
     </div>
- 
   </div>
+  {% endfor %}
 </div>
+
 
 {% endblock %}
