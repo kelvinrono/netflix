@@ -2,17 +2,16 @@
 {%block content%}
 <div class="container-fluid">
 
-    {% for singles in movie%}
-
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{singles.original_title}}</h5>
-          <p class="card-text">{{singles.overview}}</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+  <div class="row">
+    <h2>Trailers</h2>
+    {% for req in reqs.items%}
+    <div class=" m-2 trailers">
+    <iframe id="video" width="400" height="400" src="//www.youtube.com/embed/{{req.id.videoId}}?rel=0"
+    frameborder="5" allowfullscreen></iframe>
+</div>
+    {% endfor %}
 </div>
 
+    </div>
 
 {%endblock%}
